@@ -5,7 +5,7 @@
 _ft_read:
 				mov		rax, 0x2000003
 				syscall
-				call	___error
+				jc		.error
 				ret
 .error:
 				push	rax

@@ -20,6 +20,7 @@ clean:
 
 fclean:			clean
 				rm -rf $(NAME)
+				rm test
 
 re:				fclean $(NAME)
 
