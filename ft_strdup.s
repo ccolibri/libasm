@@ -3,7 +3,7 @@
                 extern  _ft_strlen  ;   
                 extern  _ft_strcpy  ;   
                 section .text       ;   
-                global  _ft_strdup  ;   
+                global  _ft_strdup  ;   char *strdup(const char *s1);
 
 _ft_strdup:                         ;   rdi - s1
                 push    rdi         ;   backup rdi at the top of stack before call strlen

@@ -1,6 +1,6 @@
 				extern	___error
 				section .text
-				global _ft_read
+				global _ft_read				;     ssize_t	read(int fildes, void *buf, size_t nbyte);
 
 _ft_read:
 				mov		rax, 0x2000003		;	sys_read call identifier
@@ -14,4 +14,3 @@ _ft_read:
 				mov		[rax], edx			;	move errno value to errno address
 				mov		rax, -1				;	rax = -1
 				ret							;	return rax
-

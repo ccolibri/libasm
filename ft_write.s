@@ -1,6 +1,6 @@
 				extern	___error
 				section .text
-				global _ft_write
+				global _ft_write			;	 ssize_t write(int fildes, const void *buf, size_t nbyte);
 
 _ft_write:
 				mov		rax, 0x2000004		;	sys_write call identifier

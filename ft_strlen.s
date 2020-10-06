@@ -1,5 +1,5 @@
 				section .text
-				global _ft_strlen
+				global _ft_strlen				;	size_t	strlen(const char *s);
 
 _ft_strlen:										;	rdi - str
 				xor		rax, rax				;	i = 0;
